@@ -4,10 +4,10 @@ The *run_analysis.R* script does the following (the txt files from the original 
 available):
 
 - Acquires the original input variable names reading the *features.txt* file and elaborates them
-to remove special character ( *(*, *)*, *,* and *-*). More information on the variables can be found 
+to remove special character ( '*(*', '*)*', '*,*' and '*-*'). More information on the variables can be found 
 in the *features_info.txt* file
 - Selects the indexes corresponding to variable names related to mean and standard deviation
-values (i.e. selects the variable names that contains *-mean()* or *-std()* before the name 
+values (i.e. selects the variable names that contains '*-mean()*' or '*-std()*' before the name 
 standardization)
 - Acquires the activities labels reading the *activity_labels.txt* file. This 
 allows to derive the activity name from the corresponding numeric id
@@ -46,8 +46,8 @@ omitted from the computation.
 The output of this elaboration is then written to a text file name *TidyData.txt* using *;* 
 as separator.
 
-This tidy data set contains the following variables (note that the prefix *t* denotes a 
-signal in time domain while *f* in frequency domain):
+This tidy data set contains the following variables (note that the prefix '*t*' denotes a 
+signal in time domain while '*f*' in frequency domain):
 
 1. **Activity**: descriptive label for the activity
 2. **SubjectId**: subject id
